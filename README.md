@@ -1,7 +1,8 @@
 aslp_lifter_ocaml
 =================
 
-This is a pre-generated AArch64 lifter in Ocaml.
+This is a pre-generated AArch64 lifter in Ocaml, generated using the
+offline partial evaluation of [ASLp](https://github.com/UQ-PAC/aslp).
 
 Usage
 -----

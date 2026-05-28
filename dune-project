@@ -1,4 +1,4 @@
-(lang dune 3.23)
+(lang dune 3.0)
 
 (name aslp_lifter_ocaml)
 
@@ -16,7 +16,6 @@
   (synopsis "AArch64 offline lifter (pre-generated)")
   (depends
     ("ocaml"     (>= "4.14"))
-    ; optionally depends on "asli" if you want aslp_offline.offlineASL_runner
   )
 )
 

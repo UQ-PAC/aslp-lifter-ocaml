@@ -374,11 +374,8 @@ open Aarch64_branch_conditional_cond
 open Aarch64_branch_conditional_compare
 
 let run  ~(pc:int) enc =
-  let module I =
-    (Asl_ibi : Instruction_building_interface.IBI
-      with type bitvector = LibASL_stage0.Primops.bitvector
-      and type ast = LibASL_stage0.Asl_ast.stmt list) in
-  I.reset_ir ();
+  let module I = Asl_ibi in
+  Asl_ibi.reset_ir ();
   let pc = (I.mkBits (I.bigint_of_int 64) (I.bigint_of_int pc)) in
   f_A64_decoder (module I) enc pc;
-  I.get_ir ()
+  Asl_ibi.get_ir ()

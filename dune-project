@@ -11,7 +11,7 @@
 (homepage "https://github.com/UQ-PAC/aslp-lifter-ocaml")
 
 (package
-  (version 1.0)
+  (version 1.1)
   (name aslp_lifter_ocaml)
   (synopsis "AArch64 offline lifter (pre-generated)")
   (depends
